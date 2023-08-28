@@ -3,7 +3,7 @@ import numpy as np
 DIM_F = 10
 n = 5
 vectorA = np.empty(DIM_F,dtype=int)
-vectorA = np.array([1,2,4,5,6,0,0,0,0,0])
+vectorA = np.array([1,4,6,8,10,0,0,0,0,0])
 
 num = int(input("Ingrese el elemento que desea insertar: "))
 b = 0
