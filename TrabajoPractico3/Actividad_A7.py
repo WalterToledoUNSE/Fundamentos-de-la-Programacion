@@ -1,4 +1,6 @@
 # Para una cadena de caracteres determinar y mostrar la cantidad de vocales que tiene la cadena.
+import numpy as np
+
 
 # Definición de Módulos
 def contarVocales(v, dim):
@@ -10,8 +12,8 @@ def contarVocales(v, dim):
     return vocales
 
 # Programa Principal
-mje = input("Ingrese una cadena de texto: ")
-dim = len(mje)
+mje = np.array(['h','o','L','a','','m','U','n','d','O'])
+dim = 10
 
 cantidadVocales = contarVocales(mje, dim)
 print("La cantidad de vocales en el string ingresado es de:",cantidadVocales)
