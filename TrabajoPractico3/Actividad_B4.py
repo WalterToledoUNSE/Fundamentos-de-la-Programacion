@@ -5,9 +5,17 @@ import numpy as np
 
 # Definición de Módulos
 def cargarVector(A, dimA):
-    A = [2,5,6,9,8,6,10,88]
+    A[0] = 2
+    A[1] = 5
+    A[2] = 6
+    A[3] = 9
+    A[4] = 8
+    A[5] = 6
+    A[6] = 1
+    A[7] = 88
     dimA = 8
-    return A, dimA
+
+    return dimA
 
 def ordenarVector(A, dimA):
     i = 0
@@ -23,7 +31,8 @@ def ordenarVector(A, dimA):
         A[p] = A[i]
         A[i] = aux
         i += 1
-    return A
+
+    return None
 
 def mostrarVector(A,dimA):
     for i in range(dimA):
@@ -36,10 +45,10 @@ DIM = 10
 dimA = 0
 
 vectorA = np.empty(DIM,dtype=int)
-vectorA, dimA = cargarVector(vectorA, dimA)
+dimA = cargarVector(vectorA, dimA)
 print("El vector ingresado es el siguiente:")
 mostrarVector(vectorA, dimA)
-vectorA = ordenarVector(vectorA, dimA)
+ordenarVector(vectorA, dimA)
 print("\nEl vector ordenado es el siguiente:")
 mostrarVector(vectorA, dimA)
 

@@ -4,9 +4,17 @@ import numpy as np
 
 # Definición de Módulos
 def cargarVector(A, dimA):
-    A = [20,5,6,9,8,6,0,8]
+    A[0] = 2
+    A[1] = 5
+    A[2] = 6
+    A[3] = 9
+    A[4] = 8
+    A[5] = 6
+    A[6] = 1
+    A[7] = 88
     dimA = 8
-    return A, dimA
+
+    return dimA
 
 def mostrarVector(A,dimA):
     for i in range(dimA):
@@ -32,7 +40,7 @@ dimA = 0
 
 vectorA = np.empty(DIM,dtype=int)
 
-vectorA, dimA = cargarVector(vectorA, dimA)
+dimA = cargarVector(vectorA, dimA)
 print("El vector ingresado es el siguiente:")
 mostrarVector(vectorA, dimA)
 menor, mayor = determinarMayorMenor(vectorA, dimA)

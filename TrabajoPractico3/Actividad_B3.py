@@ -7,9 +7,9 @@ def determinarParesImpares(numX):
     par = 0
     impar = 0
 
-    centena = numeroX // 100
-    decena = (numeroX % 100)//10
-    unidad = numeroX % 10
+    centena = numX // 100
+    decena = (numX % 100)//10
+    unidad = numX % 10
 
     if centena % 2 > 0:
         impar = impar + 1
