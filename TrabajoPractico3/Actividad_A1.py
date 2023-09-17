@@ -1,14 +1,15 @@
-# Definición de Módulos
-def nombreFuncion(parametro1,parametro2,parametro3):
+# Calcular el área de un círculo conociendo su perímetro r = p / 2π y a = π. r2
+import math
 
-    calculo = parametro1+parametro2+parametro3;
+def calcularArea(perimetro):
 
-    return calculo
+    radio = perimetro / (2 * math.pi)
+    area = math.pi * (radio * radio)
+
+    return area
 
 # Programa Principal
-p1 = 0
-p2 = 10
-p3 = 5
-resultado = nombreFuncion(p1,p2,p3)
+perimetro = float(input("Ingrese el perímetro para calcular el área:"))
+resultado = calcularArea(perimetro)
 
-print("El resultado es ",resultado)
+print("El área es ",resultado)
