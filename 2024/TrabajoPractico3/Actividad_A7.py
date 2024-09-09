@@ -8,11 +8,12 @@ def contarVocales(v, dim):
     for i in range(dim):
         vocal = v[i].upper()
         if vocal == "A" or vocal == "E" or vocal == "I" or vocal == "O" or vocal == "U":
+        # if vocal in('AEIOU'): #En lugar del los OR, se puede usar la sentencia "in"
             vocales+=1
     return vocales
 
 # Programa Principal
-mje = np.array(['h','o','L','a','','m','U','n','d','O'])
+mje = np.array(['h','o','L','a','_','m','U','n','d','O'])
 dim = 10
 
 cantidadVocales = contarVocales(mje, dim)
