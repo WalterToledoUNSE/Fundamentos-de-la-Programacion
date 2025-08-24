@@ -1,9 +1,9 @@
 import numpy as np
 
-DIM_F = 6
+DIM_F = 10
 n = 5
 vectorA = np.empty(DIM_F,dtype=int)
-vectorA = np.array([1,4,6,8,10,0])
+vectorA = np.array([1,4,6,8,10,0,0,0,0,0])
 
 num = int(input("Ingrese el elemento que desea insertar: "))
 b = 0
@@ -11,7 +11,7 @@ i = 0
 while i < n and b == 0:
     # El signo determina el tipo de ordenamiento (ascendente o descendente)
     if num < vectorA[i]:
-        j = n - 1
+        j = n
         while j >= i:
             vectorA[j+1] = vectorA[j]
             j -= 1
