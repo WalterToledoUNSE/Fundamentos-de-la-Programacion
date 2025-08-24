@@ -10,16 +10,16 @@ def buscarNumero(v, dim, numero):
     return posicion
 
 # Programa Principal
-DIM_FISICA = 50
-vector = np.empty(DIM_FISICA, dtype=int)
-dimLogica = int(input("Ingrese la cantidad de elementos del vector: "))
+DIMV = 50
+vector = np.empty(DIMV, dtype=int)
+dim = int(input("Ingrese la cantidad de elementos del vector: "))
 
-for i in range(dimLogica):
+for i in range(dim):
     valor = int(input("Ingrese un valor: "))
     vector[i] = valor
 x = int(input("Ingrese el número a buscar en el vector: "))
 
-pos = buscarNumero(vector,dimLogica, x)
+pos = buscarNumero(vector,dim, x)
 if pos > -1:
     print("El número",x,"existe en la posición ",pos,"del vector")
 else:

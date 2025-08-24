@@ -13,14 +13,14 @@ def calcularMayor(pri,seg,ter):
 
 # Programa Principal
 
-bandera = False
-while not bandera:
+band = False
+while not band:
     primer = int(input("Ingrese el primer número:"))
     segundo = int(input("Ingrese el segundo número:"))
     tercer = int(input("Ingrese el tercer número:"))
 
     if primer == 0 and segundo == 0 and tercer == 0:
-        bandera = True
+        band = True
     else:
         mayor = calcularMayor(primer, segundo, tercer)
         print("El mayor número de la terna es", mayor)

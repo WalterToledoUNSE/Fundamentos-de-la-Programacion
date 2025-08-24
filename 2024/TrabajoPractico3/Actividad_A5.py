@@ -10,13 +10,13 @@ def buscarMayorValor(v, dim):
     return mayor
 
 # Programa Principal
-DIM_FISICA = 50
-vector = np.empty(DIM_FISICA, dtype=int)
-dimLogica = int(input("Ingrese la cantidad de elementos del vector: "))
+DIMV = 50
+vector = np.empty(DIMV, dtype=int)
+dim = int(input("Ingrese la cantidad de elementos del vector: "))
 
-for i in range(dimLogica):
+for i in range(dim):
     valor = int(input("Ingrese un valor: "))
     vector[i] = valor
 
-may = buscarMayorValor(vector,dimLogica)
+may = buscarMayorValor(vector,dim)
 print("El mayor elemento del vector es:",may)
