@@ -28,8 +28,19 @@ def determinarParesImpares(numX):
 
     return par, impar
 
+
 # Programa Principal
-numeroX = int(input("Ingrese el número X: "))
+valido = False
+# Se genera un ciclo para garantizar que los lados del triangulo sean positivos.
+while not valido:
+    numeroX = int(input("Ingrese el número X: "))
+    numeroX = abs(numeroX)
+    if numeroX >= 100 and numeroX <= 999:
+        valido = True
+    else:
+        print("El número ingresado no tiene 3 digitos.")
+
+
 digitoPar, digitoImpar = determinarParesImpares(numeroX)
 
 print("La cantidad de dígitos pares es ",digitoPar)

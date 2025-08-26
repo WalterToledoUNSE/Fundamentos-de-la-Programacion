@@ -4,7 +4,7 @@
 import numpy as np
 
 # Definición de Módulos
-def cargarVector(A, dimA):
+def cargarVector(A):
     A[0] = 2
     A[1] = 5
     A[2] = 6
@@ -14,7 +14,6 @@ def cargarVector(A, dimA):
     A[6] = 1
     A[7] = 88
     dimA = 8
-
     return dimA
 
 def ordenarVector(A, dimA):
@@ -41,14 +40,14 @@ def mostrarVector(A,dimA):
     return None
 
 # Programa Principal
-DIM = 10
-dimA = 0
+DIM_FISICA = 10
+dimLogica = 0
 
-vectorA = np.empty(DIM,dtype=int)
-dimA = cargarVector(vectorA, dimA)
+vectorA = np.empty(DIM_FISICA,dtype=int)
+dimLogica = cargarVector(vectorA)
 print("El vector ingresado es el siguiente:")
-mostrarVector(vectorA, dimA)
-ordenarVector(vectorA, dimA)
+mostrarVector(vectorA, dimLogica)
+ordenarVector(vectorA, dimLogica)
 print("\nEl vector ordenado es el siguiente:")
-mostrarVector(vectorA, dimA)
+mostrarVector(vectorA, dimLogica)
 

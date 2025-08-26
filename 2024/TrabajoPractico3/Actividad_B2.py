@@ -1,4 +1,4 @@
-# A partir de 3 números muestre el mayor y el menor
+# A partir de 3 números determine el mayor y el menor
 
 # Definición de Módulos
 def mostrarMayorMenor(num1,num2,num3):
